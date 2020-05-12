@@ -88,7 +88,8 @@ def crawl_site(base_url: str) -> Graph:
 
 
 if __name__ == '__main__':
-    base_url = 'https://nathanclonts.com'
+    import sys
+    base_url = sys.argv[1]
 
     graph = crawl_site(base_url)
     print(graph)
